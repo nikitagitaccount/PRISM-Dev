@@ -1,0 +1,26 @@
+<ibm-header>
+    <ibm-hamburger *ngIf="hasHamburger" (click)="expanded($event)"></ibm-hamburger>
+    <ibm-header-navigation>
+
+        <ibm-header-item>PES PRISM</ibm-header-item>
+        <ibm-header-item>ABC Corporation</ibm-header-item>
+        <ibm-header-item >
+            <div class="bx--toolbar">
+                <ibm-search placeholder="search" size="sm" [toolbar]="true"></ibm-search>
+            </div>
+        </ibm-header-item>
+    </ibm-header-navigation>
+</ibm-header>
+<!-- <ibm-sidenav>
+    <ibm-sidenav-item [route]="['foo']">
+        Backup, Recovery
+    </ibm-sidenav-item>
+    <ibm-sidenav-menu title="Automated Provisioning">
+        <ibm-sidenav-item [route]="['foo']" >Cloud Infrastructure Provisioning</ibm-sidenav-item>
+        <ibm-sidenav-item [route]="['bar']">Landing Zone Provisioning</ibm-sidenav-item>
+        <ibm-sidenav-item [route]="['foo']">Storage Provisioning</ibm-sidenav-item>
+    </ibm-sidenav-menu>
+    </ibm-sidenav>
+    <div>
+        <router-outlet></router-outlet>
+    </div> -->
